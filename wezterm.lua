@@ -103,6 +103,11 @@ config.keys = {
         key = "UpArrow",
         action = wezterm.action.AdjustPaneSize { "Up", 10 }
     },
+		{
+				mods = 'LEADER',
+				key = 'm',
+				action = wezterm.action.TogglePaneZoomState,
+		},
 }
 
 for i = 0, 9 do
